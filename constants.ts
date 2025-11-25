@@ -33,7 +33,7 @@ export const HERO_CAROUSEL_IMAGES = [
   // "https://picsum.photos/seed/godzilla/600/600",
   // "https://picsum.photos/seed/spidey/600/600",
   // "https://picsum.photos/seed/vader/600/600",
-  "assets/1.jpg",
+  "https://www.pngegg.com/es/png-iqfyj#google_vignette",
   "assets/2.jpg",
   "assets/3.jpg",
   "assets/4.jpg"
