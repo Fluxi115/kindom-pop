@@ -33,7 +33,7 @@ export const HERO_CAROUSEL_IMAGES = [
   // "https://picsum.photos/seed/godzilla/600/600",
   // "https://picsum.photos/seed/spidey/600/600",
   // "https://picsum.photos/seed/vader/600/600",
-  "https://www.pngegg.com/es/png-iqfyj#google_vignette",
+  "https://www.pngegg.com/es/png-iqfyj#https://e7.pngegg.com/pngimages/172/710/png-clipart-superman-batman-funko-action-toy-figures-funko-pop-comics-child.png",
   "assets/2.jpg",
   "assets/3.jpg",
   "assets/4.jpg"
