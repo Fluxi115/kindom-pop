@@ -33,10 +33,10 @@ export const HERO_CAROUSEL_IMAGES = [
   // "https://picsum.photos/seed/godzilla/600/600",
   // "https://picsum.photos/seed/spidey/600/600",
   // "https://picsum.photos/seed/vader/600/600",
-  "1.jpg",
-  "2.jpg",
-  "3.jpg",
-  "4.jpg"
+  "assets/1.jpg",
+  "assets/2.jpg",
+  "assets/3.jpg",
+  "assets/4.jpg"
 ].map(getAssetUrl);
 
 export const AUTH_BG_IMAGE = getAssetUrl("https://images.unsplash.com/photo-1608889175123-8ee362201f81?q=80&w=2000&auto=format&fit=crop");
