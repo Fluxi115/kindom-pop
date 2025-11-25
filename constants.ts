@@ -87,7 +87,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 'p_messi',
     name: 'Lionel Messi',
-    image: getAssetUrl('https://m.media-amazon.com/images/I/61H+D5z+gPL._AC_SL1161_.jpg'),
+    image: getAssetUrl('https://ss639.liverpool.com.mx/xl/1129195882.jpg'),
     images: [
       'https://m.media-amazon.com/images/I/61H+D5z+gPL._AC_SL1161_.jpg',
       'https://m.media-amazon.com/images/I/61-2ZgXk2lL._AC_SL1200_.jpg',
@@ -101,7 +101,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 'p1',
     name: 'Godzilla',
-    image: getAssetUrl('https://picsum.photos/seed/godzilla/400/400'),
+    image: getAssetUrl('https://ss639.liverpool.com.mx/xl/1159882361.jpg'),
     images: getImages('godzilla'),
     price: 15.99,
     category: 'Películas',
@@ -110,7 +110,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 'p2',
     name: 'Slash',
-    image: getAssetUrl('https://picsum.photos/seed/slash/400/400'),
+    image: getAssetUrl('https://tooys.mx/media/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/s/l/slash_funko_00.jpg'),
     images: getImages('slash'),
     price: 12.99,
     category: 'Música',
@@ -119,7 +119,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 'p3',
     name: 'Freddie Mercury',
-    image: getAssetUrl('https://picsum.photos/seed/freddie/400/400'),
+    image: getAssetUrl('https://m.media-amazon.com/images/I/61kLNlYjJZL._AC_UF894,1000_QL80_.jpg'),
     images: getImages('freddie'),
     price: 14.99,
     category: 'Música',
@@ -128,7 +128,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 'p4',
     name: 'Axl Rose',
-    image: getAssetUrl('https://picsum.photos/seed/axl/400/400'),
+    image: getAssetUrl('https://anima-te.es/7454-large_default/funko-pop-guns-n-roses-axl-rose-1990-s-397.jpg'),
     images: getImages('axl'),
     price: 13.99,
     category: 'Música',
@@ -137,7 +137,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 'p5',
     name: 'Spider-Man',
-    image: getAssetUrl('https://picsum.photos/seed/spidey/400/400'),
+    image: getAssetUrl('https://m.media-amazon.com/images/I/71-fqNbqHhL.jpg'),
     images: getImages('spidey'),
     price: 11.99,
     category: 'Comics',
@@ -146,7 +146,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 'p6',
     name: 'Darth Vader',
-    image: getAssetUrl('https://picsum.photos/seed/vader/400/400'),
+    image: getAssetUrl('https://m.media-amazon.com/images/I/5198+z1R6YL._AC_UF894,1000_QL80_.jpg'),
     images: getImages('vader'),
     price: 16.99,
     category: 'Películas',
@@ -155,7 +155,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 'p7',
     name: 'Harry Potter',
-    image: getAssetUrl('https://picsum.photos/seed/harry/400/400'),
+    image: getAssetUrl('https://ss639.liverpool.com.mx/xl/1146680654.jpg'),
     images: getImages('harry'),
     price: 12.99,
     category: 'Películas',
@@ -164,7 +164,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 'p8',
     name: 'Batman',
-    image: getAssetUrl('https://picsum.photos/seed/batman/400/400'),
+    image: getAssetUrl('https://m.media-amazon.com/images/I/41BoBX3s8uL.jpg'),
     images: getImages('batman'),
     price: 13.99,
     category: 'Comics',
