@@ -29,10 +29,10 @@ export const getAssetUrl = (path: string) => {
 export const HERO_BG_IMAGE = getAssetUrl("https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070&auto=format&fit=crop");
 
 export const HERO_CAROUSEL_IMAGES = [
-  "https://picsum.photos/id/454/600/600",
-  "https://picsum.photos/seed/godzilla/600/600",
-  "https://picsum.photos/seed/spidey/600/600",
-  "https://picsum.photos/seed/vader/600/600",
+  // "https://picsum.photos/id/454/600/600",
+  // "https://picsum.photos/seed/godzilla/600/600",
+  // "https://picsum.photos/seed/spidey/600/600",
+  // "https://picsum.photos/seed/vader/600/600",
   "1.jpg"
 ].map(getAssetUrl);
 
