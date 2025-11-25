@@ -34,8 +34,8 @@ export const HERO_CAROUSEL_IMAGES = [
   // "https://picsum.photos/seed/spidey/600/600",
   // "https://picsum.photos/seed/vader/600/600",
   "https://gettoshopmx.com/cdn/shop/products/Mexico_Vinyl_Art_Toys_df90f9a5-f779-47b5-82c3-c269f3fc47a3.png?v=1632768316",
-  "assets/3.jpg",
-  "assets/4.jpg"
+  "https://e7.pngegg.com/pngimages/668/964/png-clipart-cyborg-funko-pop-silhouette-gitd-action-toy-figures-funko-pop-heroes-figurine-pop-fortnite-fictional-character-justice-league.png",
+  "https://i.pinimg.com/736x/5d/82/29/5d8229b889d09768e4a0157988878b0a.jpg"
 ].map(getAssetUrl);
 
 export const AUTH_BG_IMAGE = getAssetUrl("https://images.unsplash.com/photo-1608889175123-8ee362201f81?q=80&w=2000&auto=format&fit=crop");
