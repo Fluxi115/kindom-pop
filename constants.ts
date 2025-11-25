@@ -33,7 +33,7 @@ export const HERO_CAROUSEL_IMAGES = [
   // "https://picsum.photos/seed/godzilla/600/600",
   // "https://picsum.photos/seed/spidey/600/600",
   // "https://picsum.photos/seed/vader/600/600",
-  "https://www.pngegg.com/es/png-iqfyj#https://e7.pngegg.com/pngimages/172/710/png-clipart-superman-batman-funko-action-toy-figures-funko-pop-comics-child.png",
+  "https://www.pngegg.com/es/png-iqfyj#https://gettoshopmx.com/cdn/shop/products/Mexico_Vinyl_Art_Toys_df90f9a5-f779-47b5-82c3-c269f3fc47a3.png?v=1632768316://e7.pngegg.com/pnhttps://gettoshopmx.com/cdn/shop/products/Mexico_Vinyl_Art_Toys_df90f9a5-f779-47b5-82c3-c269f3fc47a3.png?v=1632768316gimages/172/710/png-clipart-superman-batman-funko-action-toy-figures-funko-pop-comics-child.png",
   "assets/2.jpg",
   "assets/3.jpg",
   "assets/4.jpg"
