@@ -1,16 +1,6 @@
 import React from 'react';
 import HeroCarousel from './HeroCarousel';
-
-// Single static background image for the Hero Section
-const HERO_BG_IMAGE = "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070&auto=format&fit=crop";
-
-// Images to rotate in the product/image side circle
-const PRODUCT_CAROUSEL_IMAGES = [
-  "https://picsum.photos/id/454/600/600", // Original
-  "https://picsum.photos/seed/godzilla/600/600",
-  "https://picsum.photos/seed/spidey/600/600",
-  "https://picsum.photos/seed/vader/600/600"
-];
+import { HERO_BG_IMAGE, HERO_CAROUSEL_IMAGES } from '../constants';
 
 const Hero: React.FC = () => {
   return (
@@ -50,7 +40,7 @@ const Hero: React.FC = () => {
                {/* Circular Container for Carousel */}
                <div className="w-full h-full rounded-full border-[6px] border-white/30 shadow-[0_0_30px_rgba(0,0,0,0.3)] overflow-hidden transform md:rotate-[-6deg] hover:rotate-0 transition-transform duration-700 bg-white relative z-10">
                   <HeroCarousel 
-                    images={PRODUCT_CAROUSEL_IMAGES} 
+                    images={HERO_CAROUSEL_IMAGES} 
                     interval={3500} 
                     indicatorClass="bottom-6"
                   />

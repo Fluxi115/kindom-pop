@@ -1,9 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import Navbar from './Navbar';
-
-// Image of a pile of figures to match the aesthetic
-const BG_IMAGE = "https://images.unsplash.com/photo-1608889175123-8ee362201f81?q=80&w=2000&auto=format&fit=crop";
+import { AUTH_BG_IMAGE } from '../constants';
 
 const AuthPage: React.FC = () => {
   const navigate = useNavigate();
@@ -20,7 +18,7 @@ const AuthPage: React.FC = () => {
         <div className="absolute inset-0 lg:hidden z-0">
           <div 
             className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: `url(${BG_IMAGE})` }}
+            style={{ backgroundImage: `url(${AUTH_BG_IMAGE})` }}
           />
           <div className="absolute inset-0 bg-white/30 backdrop-blur-md"></div>
         </div>
@@ -28,7 +26,7 @@ const AuthPage: React.FC = () => {
         {/* Desktop Left Panel: Sharp Image */}
         <div 
           className="hidden lg:block lg:w-1/2 bg-cover bg-center relative z-0"
-          style={{ backgroundImage: `url(${BG_IMAGE})` }}
+          style={{ backgroundImage: `url(${AUTH_BG_IMAGE})` }}
         >
           {/* Optional overlay to ensure it's not too overwhelming if needed, but keeping clear per screenshot 1 */}
         </div>
