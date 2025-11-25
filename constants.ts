@@ -34,7 +34,7 @@ export const HERO_CAROUSEL_IMAGES = [
   // "https://picsum.photos/seed/spidey/600/600",
   // "https://picsum.photos/seed/vader/600/600",
   "https://gettoshopmx.com/cdn/shop/products/Mexico_Vinyl_Art_Toys_df90f9a5-f779-47b5-82c3-c269f3fc47a3.png?v=1632768316",
-  "https://e7.pngegg.com/pngimages/668/964/png-clipart-cyborg-funko-pop-silhouette-gitd-action-toy-figures-funko-pop-heroes-figurine-pop-fortnite-fictional-character-justice-league.png",
+  "https://ss639.liverpool.com.mx/xl/1125386543.jpg",
   "https://i.pinimg.com/736x/5d/82/29/5d8229b889d09768e4a0157988878b0a.jpg"
 ].map(getAssetUrl);
 
@@ -74,16 +74,6 @@ const LOREM = "Figura coleccionable de vinilo con diseño estilizado. Ideal para
 
 export const PRODUCTS: Product[] = [
   // EXAMPLE LOCAL PRODUCT
-  {
-    id: 'my-local-product',
-    name: 'My New Product',
-    // CHANGE 'your-image-filename.jpg' below to the name of the file in your /assets folder
-    image: getAssetUrl('your-image-filename.jpg'), 
-    images: [getAssetUrl('your-image-filename.jpg')],
-    price: 0.00,
-    category: 'Novedades',
-    description: "This is a placeholder product. Update the filename in constants.ts to see your image here."
-  },
   {
     id: 'p_messi',
     name: 'Lionel Messi',
