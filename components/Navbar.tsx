@@ -1,29 +1,23 @@
 import React, { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import { NAV_LINKS } from '../constants';
 
-interface NavbarProps {
-  onAuthClick?: () => void;
-  onNavigate?: (page: string) => void;
-}
-
-const Navbar: React.FC<NavbarProps> = ({ onAuthClick, onNavigate }) => {
+const Navbar: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
   const handleLinkClick = (label: string) => {
     setIsMobileMenuOpen(false);
-    if (onNavigate) {
-      // Simple routing logic: 'Inicio' goes home, others go to catalog
-      if (label === 'Inicio') {
-        onNavigate('home');
-      } else {
-        onNavigate('catalog');
-      }
+    if (label === 'Inicio') {
+      navigate('/');
+    } else {
+      navigate('/catalog');
     }
   };
 
   return (
     <header className="w-full relative z-50">
-      {/* Top "Comic" Background Strip - Simulated with a gradient/pattern */}
+      {/* Top "Comic" Background Strip */}
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-gray-100 via-white to-gray-100 opacity-50 pointer-events-none -z-10"></div>
       
       {/* Main Nav Container */}
@@ -56,7 +50,7 @@ const Navbar: React.FC<NavbarProps> = ({ onAuthClick, onNavigate }) => {
             {/* Logo for Mobile */}
             <div 
               className="lg:hidden font-black text-xl tracking-tighter italic cursor-pointer"
-              onClick={() => handleLinkClick('Inicio')}
+              onClick={() => navigate('/')}
             >
               KINGDOM POP
             </div>
@@ -78,13 +72,13 @@ const Navbar: React.FC<NavbarProps> = ({ onAuthClick, onNavigate }) => {
 
               {/* User Actions */}
               <div className="flex items-center gap-4">
-                <button 
-                  onClick={onAuthClick}
+                <Link 
+                  to="/auth"
                   className="flex flex-col items-center text-gray-600 hover:text-black group focus:outline-none"
                 >
                   <i className="fas fa-user text-lg mb-0.5 group-hover:scale-110 transition-transform"></i>
                   <span className="text-[10px] font-bold uppercase hidden md:block">Perfil</span>
-                </button>
+                </Link>
                 <button className="flex flex-col items-center text-gray-600 hover:text-black group focus:outline-none">
                   <div className="relative">
                     <i className="fas fa-shopping-cart text-lg mb-0.5 group-hover:scale-110 transition-transform"></i>
@@ -118,12 +112,13 @@ const Navbar: React.FC<NavbarProps> = ({ onAuthClick, onNavigate }) => {
             </button>
           ))}
           {/* Mobile Auth Link */}
-          <button 
-            onClick={() => { setIsMobileMenuOpen(false); onAuthClick?.(); }}
+          <Link 
+            to="/auth"
+            onClick={() => setIsMobileMenuOpen(false)}
             className="text-brand-orange font-bold uppercase text-sm py-2 border-b border-gray-100 hover:pl-2 transition-all text-left focus:outline-none"
           >
             Iniciar Sesión
-          </button>
+          </Link>
         </div>
       )}
     </header>

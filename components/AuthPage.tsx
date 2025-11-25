@@ -1,14 +1,13 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import Navbar from './Navbar';
 
 // Image of a pile of figures to match the aesthetic
 const BG_IMAGE = "https://images.unsplash.com/photo-1608889175123-8ee362201f81?q=80&w=2000&auto=format&fit=crop";
 
-interface AuthPageProps {
-  onBack?: () => void;
-}
+const AuthPage: React.FC = () => {
+  const navigate = useNavigate();
 
-const AuthPage: React.FC<AuthPageProps> = ({ onBack }) => {
   return (
     <div className="min-h-screen w-full flex flex-col bg-white">
       
@@ -41,7 +40,7 @@ const AuthPage: React.FC<AuthPageProps> = ({ onBack }) => {
            <div className="w-full max-w-[380px] flex flex-col items-center gap-6">
               
               {/* Logo: Custom SVG Construction - Acts as Back button */}
-              <button onClick={onBack} className="w-40 h-40 bg-[#FFF5DA] rounded-[30px] border-[6px] border-black relative overflow-hidden shadow-2xl mb-4 hover:scale-105 transition-transform cursor-pointer" title="Volver al inicio">
+              <button onClick={() => navigate('/')} className="w-40 h-40 bg-[#FFF5DA] rounded-[30px] border-[6px] border-black relative overflow-hidden shadow-2xl mb-4 hover:scale-105 transition-transform cursor-pointer" title="Volver al inicio">
                   <svg viewBox="0 0 200 200" className="w-full h-full">
                     <defs>
                        <pattern id="comic-dots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">

@@ -1,15 +1,21 @@
 import React, { useState } from 'react';
-import Navbar from './Navbar';
-import { Product } from '../types';
+import { useParams, Link } from 'react-router-dom';
+import { PRODUCTS } from '../constants';
 
-interface ProductDetailsPageProps {
-  product: Product;
-  onNavigate: (page: string) => void;
-  onAuthClick: () => void;
-}
-
-const ProductDetailsPage: React.FC<ProductDetailsPageProps> = ({ product, onNavigate, onAuthClick }) => {
+const ProductDetailsPage: React.FC = () => {
+  const { id } = useParams<{ id: string }>();
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
+
+  const product = PRODUCTS.find(p => p.id === id);
+
+  if (!product) {
+    return (
+      <div className="min-h-[50vh] bg-white font-sans flex flex-col items-center justify-center">
+        <h2 className="text-2xl font-bold text-gray-800 mb-4">Producto no encontrado</h2>
+        <Link to="/catalog" className="text-brand-orange font-bold hover:underline">Volver al catálogo</Link>
+      </div>
+    );
+  }
 
   // Fallback if images array isn't present
   const images = product.images && product.images.length > 0 
@@ -17,14 +23,12 @@ const ProductDetailsPage: React.FC<ProductDetailsPageProps> = ({ product, onNavi
     : [product.image];
 
   return (
-    <div className="min-h-screen bg-white font-sans pb-20">
-      <Navbar onNavigate={onNavigate} onAuthClick={onAuthClick} />
-
+    <div className="bg-white font-sans pb-20">
       <div className="container mx-auto px-4 py-6 lg:py-10">
         
         {/* Breadcrumbs */}
         <nav className="text-sm text-gray-500 mb-6">
-          <span className="cursor-pointer hover:text-brand-orange" onClick={() => onNavigate('catalog')}>{product.category}</span>
+          <Link to="/catalog" className="cursor-pointer hover:text-brand-orange">{product.category}</Link>
           <span className="mx-2">{'>'}</span>
           <span className="text-gray-800 font-medium">{product.name}</span>
         </nav>
